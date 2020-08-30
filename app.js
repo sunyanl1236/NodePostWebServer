@@ -68,7 +68,7 @@ app.use((error, req, res, next) => {
     res.status(status).json({message: message, data:data});
 });
 
-mongoose.connect('mongodb+srv://sunyanl:Abcd9876@cluster0.tdztn.mongodb.net/data?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://name:password@cluster0.tdztn.mongodb.net/data?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(result => {
         app.listen(8080);
     } )
